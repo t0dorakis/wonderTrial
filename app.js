@@ -12,8 +12,6 @@ console.log("tileTouchingTheViewport", tilesTouchingTheViewport)
 const test = (tilesTouchingTheViewport) => {
     const checkSame = () => {
         return tilesTouchingTheViewport.every((tile, index) => {
-            console.log("tile.x", tile.x)
-            console.log("hallo!!!!", expectedResult[index].x)
             return tile.x === expectedResult[index].x && (tile.y === (expectedResult[index].y))
         })
     }
